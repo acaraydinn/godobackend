@@ -1,0 +1,42 @@
+# Django Core
+Django>=5.0,<6.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.3.0
+django-filter>=23.5
+
+# API Documentation
+drf-spectacular>=0.27.0
+
+# Authentication
+djangorestframework-simplejwt>=5.3.0
+django-allauth>=0.60.0
+dj-rest-auth>=5.0.0
+
+# Firebase
+firebase-admin>=6.3.0
+fcm-django>=1.0.12
+
+# WebSockets
+channels>=4.0.0
+channels-redis>=4.1.0
+
+# Database
+dj-database-url>=2.1.0
+psycopg2-binary>=2.9.9
+
+# Production Server
+gunicorn>=21.2.0
+whitenoise>=6.6.0
+
+# Media
+Pillow>=10.2.0
+
+# Content Moderation
+better-profanity>=0.7.0
+
+# Utilities
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Security
+django-ratelimit>=4.1.0

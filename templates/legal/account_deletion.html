@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Silme - GoDo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #00D9A5;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .update-date {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        h2 {
+            color: #1a1a2e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        p,
+        ul,
+        ol {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #00D9A5;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #00D9A5;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .danger {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .contact {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #00D9A5;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hesap Silme</h1>
+        <p class="update-date">Son güncelleme: 1 Şubat 2026</p>
+
+        <p>GoDo hesabınızı kalıcı olarak silmek istiyorsanız, aşağıdaki adımları takip edebilirsiniz.</p>
+
+        <div class="danger">
+            <strong>⚠️ Dikkat:</strong> Hesap silme işlemi geri alınamaz. Hesabınızı sildikten sonra tüm verileriniz
+            kalıcı olarak silinecektir.
+        </div>
+
+        <h2>Uygulama Üzerinden Hesap Silme</h2>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Profil sekmesine gidin</strong>
+            <p>Alt menüden profil ikonuna tıklayın.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Ayarlar'ı açın</strong>
+            <p>Profil sayfasında sağ üst köşedeki ayarlar ikonuna tıklayın.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>"Hesabı Sil" seçeneğine tıklayın</strong>
+            <p>Ayarlar menüsünün en altında "Hesabı Sil" seçeneğini bulun.</p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">4</span>
+            <strong>Onaylayın</strong>
+            <p>Hesap silme işlemini onaylamak için şifrenizi girin ve "Hesabı Kalıcı Olarak Sil" butonuna tıklayın.</p>
+        </div>
+
+        <h2>Silinecek Veriler</h2>
+        <p>Hesabınızı sildiğinizde aşağıdaki veriler kalıcı olarak silinecektir:</p>
+        <ul>
+            <li>Profil bilgileriniz (ad, e-posta, fotoğraf)</li>
+            <li>Oluşturduğunuz tüm aktiviteler</li>
+            <li>Aktivite başvurularınız ve katılımlarınız</li>
+            <li>Tüm mesajlarınız</li>
+            <li>Beğenileriniz ve değerlendirmeleriniz</li>
+            <li>Konum geçmişiniz</li>
+        </ul>
+
+        <div class="warning">
+            <strong>Not:</strong> Bazı veriler yasal zorunluluklar nedeniyle 30 gün süreyle saklanabilir, ardından
+            tamamen silinir.
+        </div>
+
+        <h2>Alternatif: Hesabı Devre Dışı Bırakma</h2>
+        <p>Hesabınızı kalıcı olarak silmek yerine geçici olarak devre dışı bırakabilirsiniz. Bu durumda:</p>
+        <ul>
+            <li>Profiliniz diğer kullanıcılara görünmez</li>
+            <li>Aktiviteleriniz gizlenir</li>
+            <li>Verileriniz korunur</li>
+            <li>İstediğiniz zaman hesabınızı yeniden aktifleştirebilirsiniz</li>
+        </ul>
+
+        <h2>E-posta ile Silme Talebi</h2>
+        <p>Uygulamaya erişemiyorsanız, aşağıdaki bilgilerle bize e-posta gönderebilirsiniz:</p>
+        <ul>
+            <li>Kayıtlı e-posta adresiniz</li>
+            <li>"Hesap Silme Talebi" konulu e-posta</li>
+            <li>Kimliğinizi doğrulamak için ek bilgiler istenebilir</li>
+        </ul>
+
+        <div class="contact">
+            <h2>İletişim</h2>
+            <p>Hesap silme ile ilgili sorularınız için:</p>
+            <p><strong>E-posta:</strong> <a href="mailto:support@godo.app">support@godo.app</a></p>
+            <p>Silme talepleri 7 iş günü içinde işleme alınır.</p>
+        </div>
+    </div>
+</body>
+
+</html>
