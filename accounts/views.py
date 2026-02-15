@@ -569,11 +569,16 @@ class UserPhotoListCreateView(generics.ListCreateAPIView):
         
         # If this is first photo, make it primary
         is_first = last_order == 0
-        serializer.save(
+        photo = serializer.save(
             user=self.request.user,
             order=last_order,
             is_primary=is_first
         )
+        
+        # Sync avatar with first uploaded photo
+        if is_first:
+            self.request.user.avatar = photo.image
+            self.request.user.save(update_fields=['avatar'])
 
 
 class UserPhotoDetailView(generics.RetrieveDestroyAPIView):
@@ -589,12 +594,19 @@ class UserPhotoDetailView(generics.RetrieveDestroyAPIView):
         was_primary = instance.is_primary
         instance.delete()
         
-        # If deleted was primary, set first remaining as primary
+        # If deleted was primary, set first remaining as primary and sync avatar
         if was_primary:
             first_photo = UserPhoto.objects.filter(user=self.request.user).first()
             if first_photo:
                 first_photo.is_primary = True
                 first_photo.save()
+                # Sync avatar with new primary photo
+                self.request.user.avatar = first_photo.image
+                self.request.user.save(update_fields=['avatar'])
+            else:
+                # No photos left, clear avatar
+                self.request.user.avatar = None
+                self.request.user.save(update_fields=['avatar'])
 
 
 class SetPrimaryPhotoView(APIView):
