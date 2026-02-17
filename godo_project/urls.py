@@ -116,6 +116,7 @@ urlpatterns = [
     path('privacy/', TemplateView.as_view(template_name='legal/privacy.html'), name='privacy'),
     path('terms/', TemplateView.as_view(template_name='legal/terms.html'), name='terms'),
     path('account-deletion/', TemplateView.as_view(template_name='legal/account_deletion.html'), name='account_deletion'),
+    path('child-safety/', TemplateView.as_view(template_name='legal/child_safety.html'), name='child_safety'),
     
     # API Documentation
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
